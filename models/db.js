@@ -33,7 +33,7 @@ module.exports.init = async () => {
         name: r.key,
         type: 'postgres',
         host: r.host,
-        port: r.port || 3306,
+        port: r.port || 5432,
         username: r.username,
         password: Buffer.from(r.password, 'base64').toString('utf-8'),
         database: r.database,
